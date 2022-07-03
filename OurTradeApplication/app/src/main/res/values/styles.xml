@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="Widget.Theme.OurTradeApplication.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="Widget.Theme.OurTradeApplication.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Theme.OurTradeApplication.Launcher">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="Theme.OurTradeApplication.Main">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

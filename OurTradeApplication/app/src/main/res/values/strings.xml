@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OurTradeApplication</string>
+    <string name="title_activity_splashscreen">SplashscreenActivity</string>
+</resources>
