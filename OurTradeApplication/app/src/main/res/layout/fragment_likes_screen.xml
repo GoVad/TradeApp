@@ -38,11 +38,12 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/goodsLikes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
+            android:background="#00FF00"
             android:fontFamily="sans-serif-black"
             android:paddingLeft="5dp"
             android:paddingRight="5dp"
@@ -50,7 +51,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/searchLikes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
@@ -62,7 +63,7 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/sellerLikes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"

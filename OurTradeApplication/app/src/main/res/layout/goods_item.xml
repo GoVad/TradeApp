@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="300dp"
-    android:background="@drawable/recycler_items_background">
+    android:background="?attr/selectableItemBackground"
+    android:foregroundTintMode="add">
 
     <ImageView
         android:id="@+id/mainImage"
@@ -63,4 +64,16 @@
         android:text="1 Января 00:00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/likeBtn"
+        android:layout_width="67dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:foreground="@drawable/like"
+        android:foregroundTint="#224E9A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/like" />
 </androidx.constraintlayout.widget.ConstraintLayout>

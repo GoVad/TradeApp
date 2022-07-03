@@ -1,15 +1,16 @@
 package com.example.ourtradeapplication
 
-import androidx.lifecycle.ViewModelProvider
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import java.text.DecimalFormat
 import java.util.*
 import kotlin.random.Random
 
@@ -55,7 +56,6 @@ class ChatsScreenFragment : Fragment() {
         class ChatHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
 
             fun setup(goodModel: MainScreenViewModel.GoodModel) {
-                val formatter = DecimalFormat("00")
                 itemView.findViewById<TextView>(R.id.nameChat).text = goodModel.name
                 itemView.findViewById<TextView>(R.id.ownerChat).text = goodModel.owner
             }
@@ -65,6 +65,10 @@ class ChatsScreenFragment : Fragment() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatHolder {
             val view = LayoutInflater.from(parent.context)
                 .inflate(R.layout.chat_item, parent, false)
+            view.setOnClickListener{
+                val createIntent = Intent(parent.context, SingleChatActivity::class.java)
+                startActivity(parent.context,createIntent,null)
+            }
             return ChatHolder(view)
         }
 

@@ -3,6 +3,7 @@ package com.example.ourtradeapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
                     .setReorderingAllowed(true)
                     .addToBackStack("trade")
                     .commit();
+        });
+
+        findViewById(R.id.creationBtn).setOnClickListener(view -> {
+            Intent createIntent = new Intent(this,CreateGoodActivity.class);
+            startActivity(createIntent);
         });
 
     }

@@ -17,6 +17,21 @@
         <entry key="..\:/Users/vadzim.haruchka/Desktop/OurTradeApplication/app/src/main/res/layout/fragment_user_screen.xml" value="0.1765625" />
         <entry key="..\:/Users/vadzim.haruchka/Desktop/OurTradeApplication/app/src/main/res/layout/goods_item.xml" value="0.25" />
         <entry key="..\:/Users/vadzim.haruchka/Desktop/OurTradeApplication/app/src/main/res/layout/user_info.xml" value="0.25" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/drawable/like_shape.xml" value="0.153" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/drawable/recycler_items_background.xml" value="0.153" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/activity_create_good.xml" value="0.25" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/activity_main.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/activity_single_chat.xml" value="0.22" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/activity_single_good.xml" value="0.22" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/chat_item.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/chat_message.xml" value="0.25" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/fragment_chats_screen.xml" value="0.22" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/fragment_likes_screen.xml" value="0.25" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/fragment_trade_screen.xml" value="0.5" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/fragment_user_screen.xml" value="0.1734375" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/goods_item.xml" value="0.25" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/photo_item.xml" value="0.22" />
+        <entry key="..\:/Users/vadzim.haruchka/Desktop/TradeApp/OurTradeApplication/app/src/main/res/layout/user_info.xml" value="0.14635416666666667" />
       </map>
     </option>
   </component>

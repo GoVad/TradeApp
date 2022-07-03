@@ -20,6 +20,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
             app:srcCompat="?android:attr/actionModeFindDrawable" />
 
         <ImageView
@@ -28,6 +29,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
             app:srcCompat="@android:drawable/btn_star" />
 
         <ImageView
@@ -35,6 +37,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
             app:srcCompat="@android:drawable/ic_menu_add" />
 
         <ImageView
@@ -43,6 +46,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
             app:srcCompat="@android:drawable/sym_action_chat" />
 
         <ImageView
@@ -51,6 +55,7 @@
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
             app:srcCompat="@android:drawable/ic_menu_my_calendar" />
     </LinearLayout>
 

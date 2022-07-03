@@ -1,10 +1,15 @@
 package com.example.ourtradeapplication
 
+import android.content.Intent
+import android.graphics.Color
+import android.graphics.ColorFilter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -49,7 +54,12 @@ class TradeScreenFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainScreenViewModel::class.java)
+        viewModel = ViewModelProvider(this)[MainScreenViewModel::class.java]
+        requireView().findViewById<ImageView>(R.id.maps).setOnClickListener{
+            val mapIntent = Intent(Intent.ACTION_VIEW)
+            mapIntent.setPackage("com.google.android.apps.maps")
+            startActivity(mapIntent)
+        }
     }
 }
 
@@ -60,6 +70,9 @@ class GoodsAdapter(val items:ArrayList<MainScreenViewModel.GoodModel>)
 
         fun setup(goodModel: MainScreenViewModel.GoodModel) {
             val formatter = DecimalFormat("00")
+            itemView.findViewById<ImageView>(R.id.likeBtn).setOnClickListener{
+                it.foreground.setTint(Color.RED)
+            }
             itemView.findViewById<TextView>(R.id.name).text = goodModel.name
             itemView.findViewById<TextView>(R.id.owner).text = goodModel.owner
             itemView.findViewById<TextView>(R.id.cost).text = "${goodModel.cost}${if(position%20>10)"$" else " BYN"}"
@@ -75,6 +88,10 @@ class GoodsAdapter(val items:ArrayList<MainScreenViewModel.GoodModel>)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GoodsHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.goods_item, parent, false)
+        view.setOnClickListener{
+            val createIntent = Intent(parent.context, SingleGoodActivity::class.java)
+            ContextCompat.startActivity(parent.context, createIntent, null)
+        }
         return GoodsHolder(view)
     }
 
